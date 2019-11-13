@@ -2,14 +2,14 @@
 #include <stdlib.h>
 #include <string.h>
 #define LUNG 10
-typedef struct contat{
+typedef struct contact{
   char name[LUNG];
   int number;
-  struct contat* next;
-} Contat;
+  struct contact* next;
+} Contact;
 
 void main() {
-  Contat giovanni;
+  Contact giovanni;
   strcpy(giovanni.name, "giovanni");
   giovanni.number=256;
   giovanni.next=NULL;
@@ -19,10 +19,11 @@ void main() {
   mamma.number=123;
   mamma.next= &giovanni;
 
-  Contat* supporto= mamma;
+  Contat* support= &mamma;
   do{
-    printf("name: %s number: %d\n", supporto.name, supporto.number );
-    supporto=supporto.next;
-  }while(supporto-> next != NULL);
-  return 0;
+    printf("name: %s number: %d\n", support->name, support->number );
+    support=support->next;
+  }while(support-> next != NULL);
+    printf("name: %s number: %d\n", support->name, support->number );
+  return ;
 }

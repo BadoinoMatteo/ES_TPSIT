@@ -8,8 +8,7 @@
 #include <stdbool.h>
 
 void caricaVettore(float* vett, int dim);
-void controlloVettore(float* vett, int dim);
-
+void stampaVettore(float *vett, int dim);
 void main(){
   int dim=0;
   printf("inserisci dimensioni: ");
@@ -37,3 +36,4 @@ void main(){
     }
     return;
 }
+

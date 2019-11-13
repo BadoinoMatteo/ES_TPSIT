@@ -41,12 +41,14 @@ void main(){
 }
 
 void controlloVettore(float *vett, int dim){
-  int i;
-  for(i=0;i<dim;i++){
-    if(!(*vett)<(*vett+i)){
-      *vett=*(vett+i);
+    float magg;
+    magg = vett[0];
+    for (int i = 1; i < dim; i++) {
+        /* code */
+        if (vett[i] > magg) {
+            /* code */
+            magg = vett[i];
+        }
     }
-    *vett+i;
-  }
-  printf("\n%.2f\n", *vett );
+    printf("il maggiore è: %.2f", magg);
 }
