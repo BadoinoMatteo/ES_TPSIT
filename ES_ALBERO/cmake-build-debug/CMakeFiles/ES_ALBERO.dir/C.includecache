@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Matteo/Documents/SCUOLA/QUARTA/TPSIT/ES_ALBERO/main.c
+stdlib.h
+-
+stdbool.h
+-
+stdio.h
+-
+
